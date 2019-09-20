@@ -1,0 +1,52 @@
+{
+    // common
+    "workbench.startupEditor": "none",
+    "workbench.editor.enablePreview": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 5000,
+    "editor.cursorWidth": 5,
+
+    "git.autofetch": true,
+    "git.ignoreMissingGitWarning": true,
+    "window.zoomLevel": -1,
+    "editor.renderWhitespace": "all",
+
+    // theme color
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#666666",
+        "panel.background": "#555555",
+        "sideBar.background": "#282C34",
+        "editor.selectionHighlightBorder": "#282C3400",
+        "editor.selectionHighlightBackground": "#67769660",
+    },
+    // terminal
+    "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
+    "terminal.integrated.fontSize": 10,
+    "terminal.external.osxExec": "iTerm.app",
+    // gitlens
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    // python
+    "python.venvPath": "~/.virtualenvs",
+    "python.venvFolders": [
+        ".virtualenvs",
+        ".pyenv"
+    ],
+    // fileheader
+    "fileheader.Author": "Zedd",
+    "fileheader.LastModifiedBy": "Zedd",
+    "fileheader.tpl": "# -*- coding: utf-8 -*-\r\n# @Author: {author}\r\n# @Date: {createTime}\r\n",
+
+    "terminal.integrated.rendererType": "dom",
+    "editor.cursorStyle": "block",
+    "editor.dragAndDrop": false,
+    "editor.trimAutoWhitespace": false,
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "workbench.sideBar.location": "left",
+    //
+}
