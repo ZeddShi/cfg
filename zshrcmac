@@ -15,27 +15,27 @@ alias vimconf="vim ~/.vimrc"
 alias fp="ps -ef | grep -i"
 alias allowall="sudo spctl --master-disable"
 alias myip="curl ifconfig.me"
+alias sshaws="ssh -i ~/sshaws.pem ubuntu@ec2-18-182-54-123.ap-northeast-1.compute.amazonaws.com"
 
 # proxy
-alias sethp="export http_proxy=socks5://localhost:1080"
+alias sethp="export http_proxy=socks5://127.0.0.1:1086"
 alias unsethp="unset http_proxy"
-alias sethps="export https_proxy=socks5://localhost:1080"
+alias sethps="export https_proxy=socks5://127.0.0.1:1086"
 alias unsethps="unset https_proxy"
-
+alias getip="curl cip.cc"
 # ssh login
 alias sshymtest="ssh ymserver@172.16.1.107"
-alias sshxpcj="ssh ymserver@54.222.159.55 -p 36000"
-alias sshmy="ssh zeddshiw@104.155.206.21"
-alias sshserver="ssh alishh-ag-ma"
+alias sshxcx="ssh alishh-ag-ma"
 alias sshtestdb="ssh ymserver@172.16.1.65"
+alias ssh_youliao03='ssh ymserver@106.75.137.224 -p 36000'
+alias ssh_youliao04='ssh ymserver@106.75.152.40 -p 36000'
+alias ssh_admin='ssh -p36000 -i ~/ymserver.pem ymserver@139.196.58.44'
 # jump : ssh xcx-reading-00
 
-
-# git
-alias gitprune="git remote update origin --prune"
-
 # homebrew bottle
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+# cd "$(brew --repo)" && git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git
+# cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core" && git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 export HOMEBREW_NO_AUTO_UPDATE=false
 
 # virtualenvwrapper
@@ -44,13 +44,15 @@ export VIRTUALENVWRAPPER_PYTHON=$HOME/.pyenv/versions/3.6.5/bin/python
 source $HOME/.pyenv/versions/3.6.5/bin/virtualenvwrapper.sh
 
 # baidupcs-go
-alias baidu="/usr/local/Cellar/baidupcs-go/3.5.6/bin/BaiduPCS-Go"
+alias baidu="/usr/local/Cellar/baidupcs-go/3.6/bin/BaiduPCS-Go"
 
 # go
 # export PATH=$PATH:/usr/local/opt/go@1.9/libexec/bin
 # export GOPATH=/Users/zedd/go
 
 export PATH="/usr/local/sbin:$PATH"
+
+export PATH=$PATH:/usr/local/mysql/bin
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -63,3 +65,14 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# 
+#if type brew &>/dev/null; then
+#  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+#
+#  autoload -Uz compinit
+#  compinit
+#fi
+
+# Created by `userpath` on 2020-09-15 07:17:47
+export PATH="$PATH:/Users/ziggy/.local/bin"
